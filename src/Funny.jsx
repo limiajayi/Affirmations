@@ -25,7 +25,7 @@ const Selection = ({ text }) => {
     return (
     <>
         <p>{quotes[selected]}</p>
-        <Button onClick={handleSelectedChange} text={'motivate'} />
+        <Button onClick={handleSelectedChange} text={'make me laugh'} />
     </>
     )
 
