@@ -1,23 +1,30 @@
-import { useState } from "react";
-import Button from "./Button";
+import { useState, useEffect } from "react";
 
-const Selection = ({ lines, text }) => {
-    //lines from TextFileReader is passed into a new array
-    const quotes = lines
+const Selection = ({ lines }) => {
 
     //stores a random number based on the current length of quote
     const [selected, setSelected] = useState(0)
 
-    const handleSelectedChange = () => {
-    //chooses a random number and sets it as the new value of Selected
-    let newSelected = Math.floor(Math.random() * quotes.length)
-    setSelected(newSelected)
-    }
+    //change quotes every 10 seconds
+    useEffect(() => {
+        const interval = setInterval(() => {
+            
+            const newSelected = Math.floor(Math.random() * lines.length)
+            setSelected(newSelected)
+
+        }, 5000);
+
+        //clears the effect
+        return () => clearInterval(interval)
+    }, [lines]);
+
+
 
     return (
         <>
-            <p>{quotes[selected]}</p>
-            <Button onClick={handleSelectedChange} text={text} />
+
+            <p>{lines[selected]}</p>
+            
         </>
     )
 
