@@ -7,6 +7,7 @@ nav {
 
 h3 {
     margin: .7rem;
+    position: relative;
 }
 
 small {
@@ -20,17 +21,25 @@ small {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     padding: 0px;
     width: 45vw;
     height: 65vh;
 }
 
-.views p {
+.goals {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.4rem;
+    padding: 0px;
+}
+
+.goals p {
     display: inline;
     padding: 2px;
     margin: 0;
-    font-size: large;
 }
 
 a {
@@ -50,4 +59,12 @@ a:hover {
 
 a.active {
     border-bottom: 3px solid rgb(65, 65, 151);
+}
+
+.quote-container {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0;
 }

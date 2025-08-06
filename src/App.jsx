@@ -30,7 +30,6 @@ const App = () => {
                 </Link>
             </nav>
 
-            {console.log(active)}
             <Routes>
                 <Route path='/' element={<Home />}/>
                 <Route path='/goals' element={<Goals />}/>

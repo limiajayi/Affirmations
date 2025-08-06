@@ -45,13 +45,21 @@ const Goals = () => {
     ];
 
     const [selected, setSelected] = useState(0);
+    const [visible, setVisible] = useState(true);
 
      //change goals every 25 seconds
     useEffect(() => {
         const interval = setInterval(() => {
+            setVisible(false);
             
-            const newSelected = Math.floor(Math.random() * goals.length)
-            setSelected(newSelected)
+            setTimeout(() => {
+
+                const newSelected = Math.floor(Math.random() * goals.length)
+                setSelected(newSelected)
+
+                setVisible(true);
+
+            }, 500);
 
         }, 5000);
 
@@ -62,21 +70,25 @@ const Goals = () => {
     const arrayOfKeys = Object.keys(goals[selected])
 
     return (
-        <div className="views">
+        <div 
+        className="views">
             <h3>Goals</h3>
-            <h5>
-                {arrayOfKeys[0]}
-            </h5>
-            
-                {
-                    goals[selected][arrayOfKeys[0]].map((line) => 
-                    {return (
-                        <p>
-                            {"- " + line}
-                        </p>
-                    )})
-                }
-            <small>. . . to keep in mind</small>
+            <div 
+            className={`goals quote-container ${visible? '' : 'fade-out'}`}>
+                <h5>
+                    {arrayOfKeys[0]}
+                </h5>
+                
+                    {
+                        goals[selected][arrayOfKeys[0]].map((line) => 
+                        {return (
+                            <p>
+                                {"- " + line}
+                            </p>
+                        )})
+                    }
+                <small>. . . to keep in mind</small>
+            </div>
         </div>
     )
 }
