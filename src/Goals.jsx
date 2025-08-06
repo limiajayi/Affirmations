@@ -76,7 +76,7 @@ const Goals = () => {
                         </p>
                     )})
                 }
-            <small>to keep in mind</small>
+            <small>. . . to keep in mind</small>
         </div>
     )
 }

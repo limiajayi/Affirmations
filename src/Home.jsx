@@ -8,7 +8,7 @@ const Home = () => {
           Affirmations
         </h3>
         <TextFileReader fileName={'/quotes.txt'} />
-        <small>to wake up to</small>
+        <small>. . . to wake up to</small>
     </div>
   )
 }
