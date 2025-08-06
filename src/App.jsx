@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 const App = () => {
 
-    const [active, setActive] = useState(true)
+    const [active, setActive] = useState(false)
 
     const handleActiveChange = () => {
         const newActive = !active
