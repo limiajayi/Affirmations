@@ -53,7 +53,7 @@ const Goals = () => {
             const newSelected = Math.floor(Math.random() * goals.length)
             setSelected(newSelected)
 
-        }, 25000);
+        }, 5000);
 
         //clears the effect
         return () => clearInterval(interval)
@@ -64,19 +64,19 @@ const Goals = () => {
     return (
         <div className="views">
             <h3>Goals</h3>
-            <h4>
+            <h5>
                 {arrayOfKeys[0]}
-            </h4>
-            <div>
+            </h5>
+            
                 {
                     goals[selected][arrayOfKeys[0]].map((line) => 
                     {return (
-                        <div>
+                        <p>
                             {"- " + line}
-                        </div>
+                        </p>
                     )})
                 }
-            </div>
+            <small>to keep in mind</small>
         </div>
     )
 }

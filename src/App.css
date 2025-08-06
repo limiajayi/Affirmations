@@ -1,27 +1,42 @@
 nav {
     display: flex;
     flex-direction: row;
-    align-self: flex-start;
     align-items: center;
     justify-content: center;
-    height: 7vh;
+}
+
+h3 {
+    margin: .7rem;
+}
+
+small {
+    display: block;
+    font-weight: bold;
+    margin: .7rem;
 }
 
 .views {
-    height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-size: larger;
-    width: 50vw;
+    font-size: 1.5rem;
+    padding: 0px;
+    width: 45vw;
+    height: 65vh;
+}
+
+.views p {
+    display: inline;
+    padding: 2px;
+    margin: 0;
+    font-size: large;
 }
 
 a {
     text-decoration: none;
     font-weight: 700;
     padding: 1rem;
-    margin: .5rem;
 }
 
 a:visited {
@@ -31,4 +46,8 @@ a:visited {
 a:hover {
     background-color: #e3667b;
     color: rgb(111, 54, 123);
+}
+
+a.active {
+    border-bottom: 3px solid rgb(65, 65, 151);
 }

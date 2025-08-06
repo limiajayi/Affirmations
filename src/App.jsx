@@ -5,14 +5,18 @@ import Goals from './Goals';
 
 const App = () => {
 
+    
     return (
         <Router>
             <nav>
-                <Link to='/goals'>Goals</Link>
-                <br />
-                <Link to='/'>Affirmations</Link>
-            </nav>
+                <Link to='/goals'>
+                    Goals
+                </Link>
 
+                <Link to='/'>
+                    Affirmations
+                </Link>
+            </nav>
             <Routes>
                 <Route path='/' element={<Home />}/>
                 <Route path='/goals' element={<Goals />}/>

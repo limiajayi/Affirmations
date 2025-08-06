@@ -5,9 +5,8 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
     font-family: "Funnel Display", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
 }
