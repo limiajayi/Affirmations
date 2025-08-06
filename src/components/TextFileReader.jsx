@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import Selection from './Selection';
 
-const TextFileReader = ({ text, fileName }) => {
+const TextFileReader = ({ fileName }) => {
   //stores an array of the lines of text from quotes.txt
     const [lines, setLines] = useState([]);
 
@@ -32,7 +32,7 @@ const TextFileReader = ({ text, fileName }) => {
     return (
     <div>
         {/* line array is passed down to this component */}
-        <Selection lines={lines} text={text} />
+        <Selection lines={lines} />
     </div>
     );
 }
