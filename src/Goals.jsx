@@ -46,14 +46,14 @@ const Goals = () => {
 
     const [selected, setSelected] = useState(0);
 
-     //change goals every 5 seconds
+     //change goals every 25 seconds
     useEffect(() => {
         const interval = setInterval(() => {
             
             const newSelected = Math.floor(Math.random() * goals.length)
             setSelected(newSelected)
 
-        }, 5000);
+        }, 25000);
 
         //clears the effect
         return () => clearInterval(interval)
@@ -62,7 +62,7 @@ const Goals = () => {
     const arrayOfKeys = Object.keys(goals[selected])
 
     return (
-        <>
+        <div className="views">
             <h3>Goals</h3>
             <h4>
                 {arrayOfKeys[0]}
@@ -77,7 +77,7 @@ const Goals = () => {
                     )})
                 }
             </div>
-        </>
+        </div>
     )
 }
 

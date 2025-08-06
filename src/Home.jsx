@@ -3,12 +3,12 @@ import TextFileReader from './TextFileReader'
 const Home = () => {
 
   return (
-    <>
-    <h3>
-      Affirmations
-    </h3>
-      <TextFileReader fileName={'/quotes.txt'} />
-    </>
+    <div className='views'>
+        <h3>
+          Affirmations
+        </h3>
+        <TextFileReader fileName={'/quotes.txt'} />
+    </div>
   )
 }
 

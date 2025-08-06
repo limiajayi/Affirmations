@@ -5,14 +5,14 @@ const Selection = ({ lines }) => {
     //stores a random number based on the current length of quote
     const [selected, setSelected] = useState(0)
 
-    //change quotes every 10 seconds
+    //change quotes every 15 seconds
     useEffect(() => {
         const interval = setInterval(() => {
             
             const newSelected = Math.floor(Math.random() * lines.length)
             setSelected(newSelected)
 
-        }, 10000);
+        }, 15000);
 
         //clears the effect
         return () => clearInterval(interval)
