@@ -1,4 +1,4 @@
-import TextFileReader from './TextFileReader'
+import TextFileReader from './TextFileReader.jsx'
 
 const Home = () => {
 

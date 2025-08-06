@@ -1,8 +1,8 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import './App.css'
-import Home from './Home'
-import Goals from './Goals';
 import { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import './styles/App.css'
+import Home from './components/Home'
+import Goals from './components/Goals';
 
 const App = () => {
 
@@ -13,7 +13,6 @@ const App = () => {
         setActive(newActive)
     }
 
-    
     return (
         <Router>
             <nav>

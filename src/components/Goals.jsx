@@ -42,7 +42,7 @@ const Goals = () => {
         ]},
     ];
 
-    const [selected, setSelected] = useState(0);
+    const [selected, setSelected] = useState(Math.floor(Math.random() * goals.length));
     const [visible, setVisible] = useState(true);
 
      //change goals every 15 seconds

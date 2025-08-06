@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 const Selection = ({ lines }) => {
 
     //stores a random number based on the current length of quote
-    const [selected, setSelected] = useState(0)
+    const [selected, setSelected] = useState(Math.floor(Math.random() * lines.length))
 
     //change quotes every 10 seconds
     useEffect(() => {
