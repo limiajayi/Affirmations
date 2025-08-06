@@ -15,11 +15,9 @@ const Goals = () => {
         {"Be vulnerable": [
             "reply fast", 
             "learn conflict resolution skills", 
-            "don't force a conversation",
-            "don't force connection",
-            "show kindness always",
-            "let people go",
-            "if you get an adrenaline rush from speaking up you should probably speak up more",
+            "don't force a conversation or connection",
+            "show kindness always and let people go",
+            "if you get an adrenaline rush from speaking up, you should speak up more",
         ]},
         {"Health and Wellness": [
             "exercise twice a week", 
@@ -29,9 +27,9 @@ const Goals = () => {
             "don't forget your fruit and veggies",
         ]},
         {"Hobbies-maxxing": [
-            "Program",
+            "Write",
             "Draw", 
-            "Write", 
+            "Program", 
             "Crotchet",
             "Read books",
             "Watch movies",
@@ -47,7 +45,7 @@ const Goals = () => {
     const [selected, setSelected] = useState(0);
     const [visible, setVisible] = useState(true);
 
-     //change goals every 25 seconds
+     //change goals every 15 seconds
     useEffect(() => {
         const interval = setInterval(() => {
             setVisible(false);
@@ -61,7 +59,7 @@ const Goals = () => {
 
             }, 500);
 
-        }, 5000);
+        }, 15000);
 
         //clears the effect
         return () => clearInterval(interval)
