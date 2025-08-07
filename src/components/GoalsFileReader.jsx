@@ -24,7 +24,7 @@ const GoalsFileReader = () => {
 
     return (
         <div>
-            hmm
+            
         </div>
 
     )
