@@ -12,7 +12,7 @@ const Selection = ({ lines }) => {
             const newSelected = Math.floor(Math.random() * lines.length)
             setSelected(newSelected)
 
-        }, 10000);
+        }, 20000);
 
         //clears the effect
         return () => clearInterval(interval)
