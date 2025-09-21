@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 
 const Goals = () => {
 
-    const goals = [
+    const goals = useMemo(() => [
         {"Strengthen relationship with God": [
             "start that 365 days bible plan",
             "pray first thing every morning",
@@ -40,7 +40,7 @@ const Goals = () => {
             "Go out with friends and family", 
             "No one will remember their accolades but everyone will remember the side-quests.",
         ]},
-    ];
+    ], []);
 
     const [selected, setSelected] = useState(Math.floor(Math.random() * goals.length));
     const [visible, setVisible] = useState(true);

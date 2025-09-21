@@ -1,5 +1,4 @@
 import TextFileReader from './TextFileReader.jsx';
-import GoalsFileReader from './GoalsFileReader.jsx';
 
 const Home = () => {
 
@@ -10,7 +9,7 @@ const Home = () => {
         </h3>
         <TextFileReader fileName={'/quotes.txt'} />
         <small>. . . to wake up to</small>
-        <GoalsFileReader />
+        
     </div>
   )
 }
