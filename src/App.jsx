@@ -19,10 +19,10 @@ const NavLinks = () => {
                 Affirmations
             </Link>
 
-            <Link to='/bible'
+            {/* <Link to='/bible'
             className={location.pathname === '/bible' ? 'active' : 'inactive'}>
                 Bible
-            </Link>
+            </Link> */}
 
             <Link to='/goals'
             className={location.pathname === '/goals' ? 'active' : 'inactive'}>
@@ -39,7 +39,7 @@ const App = () => {
             <Routes>
                 <Route path='/' element={<Home />}/>
                 <Route path='/goals' element={<Goals />}/>
-                <Route path='/bible' element={<Bible />} />
+                {/* <Route path='/bible' element={<Bible />} /> */}
             </Routes>
         </Router>
     )
