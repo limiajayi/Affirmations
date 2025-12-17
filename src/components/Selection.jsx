@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+
 const Selection = ({ lines }) => {
 
     //stores a random number based on the current length of quote
@@ -31,9 +32,11 @@ const Selection = ({ lines }) => {
 
             <button onClick={() => {setPause(!pause)}}>
 
-                {pause ? 'Resume' : 'Pause'}
-                
+                {pause ? <img src="/resumeButton.svg" alt="Resume" />  : <img src="/pauseButton.svg" alt="Pause" />}
+
             </button>
+
+            
         </>
     )
 
