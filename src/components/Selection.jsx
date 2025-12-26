@@ -29,7 +29,7 @@ const Selection = ({ lines }) => {
             setHistory(history.concat(newSelected))
             setSelected(newSelected)
 
-        }, 5000);
+        }, 15000);
 
         //clears the effect
         return () => clearInterval(interval)
