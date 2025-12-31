@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react
 import './styles/App.css'
 import Home from './components/Home'
 import Goals from './components/Goals';
-import Bible from './components/Bible';
 
 const NavLinks = () => {
     const location = useLocation();

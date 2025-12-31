@@ -5,12 +5,18 @@ const Goals = () => {
     const goals = useMemo(() => [
         {"Strengthen relationship with God": [
             "start that 365 days bible plan",
-            "pray first thing every morning",
+            "pray an read bible daily",
         ]},
         {"First Class, Good Career": [
             "Make routine out of consolidating your knowledge", 
             "Apply even if you think you're not qualified", 
             "Go over once then on the second try, go over what you don't understand"
+        ]},
+        {"Side questing": [
+            "hang out with friends a lot",
+            "join societies",
+            "cook meals you like",
+            "explore the topics and subjects you like",
         ]},
         {"Be vulnerable": [
             "reply fast", 
@@ -20,25 +26,31 @@ const Goals = () => {
             "if you get an adrenaline rush from speaking up, you should speak up more",
         ]},
         {"Health and Wellness": [
-            "exercise twice a week", 
-            "buy pineapples 3 days before period", 
-            "do yoga exercises during period",
-            "eat healthy snacks",
-            "don't forget your fruit and veggies",
+            "exercise twice a week",
+            "eat fruits and vegetables",
+            "sleep 7h 30 to 8h everyday"
         ]},
         {"Hobbies-maxxing": [
-            "Write",
-            "Draw", 
-            "Program", 
-            "Crotchet",
+            "Write, Draw, Crotchet",
             "Read books",
-            "Watch movies",
+            "Program",
         ]},
-        {"Rest": [
-            "7 and a half hours sleep",
-            "Go to bed early", 
-            "Go out with friends and family", 
-            "No one will remember their accolades but everyone will remember the side-quests.",
+        {"Invest, Invest, Invest": [
+            "Be financially educated",
+            "Look into investment pots",
+            "Rest in Cash ISAs",
+        ]},
+        {"Sprints for PTP": [
+            "Postgres and Supabase implementation",
+            "API endpoints",
+            "UI / UX design",
+            "D3 Implementation",
+            "Forms",
+        ]},
+        {"Content": [
+            "Write ideas every morning",
+            "Follow trends according to the time of the year",
+            "Film in batches",
         ]},
     ], []);
 
