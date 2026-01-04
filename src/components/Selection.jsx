@@ -77,7 +77,7 @@ const Selection = ({ lines }) => {
 
             <div>
                 <button onClick={handlePrevious}>
-                    Previous
+                    {<img src="/backward.svg" alt="Next Button"/>}
                 </button>
 
                 <button onClick={() => {setPause(!pause)}}>
@@ -86,7 +86,7 @@ const Selection = ({ lines }) => {
 
                 </button>
                 <button onClick={handleNext}>
-                    Next
+                    {<img src="/forward.svg" alt="Next Button"/>}
                 </button>
 
                 {console.log(history)}
