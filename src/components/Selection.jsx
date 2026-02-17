@@ -76,7 +76,7 @@ const Selection = ({ lines }) => {
             <p>{lines[selected]}</p>
 
             <div>
-                <button onClick={handlePrevious}>
+                {/* <button onClick={handlePrevious}>
                     {<img src="/backward.svg" alt="Next Button"/>}
                 </button>
 
@@ -90,7 +90,7 @@ const Selection = ({ lines }) => {
                 </button>
 
                 {console.log(history)}
-                {console.log(historyPosition)}
+                {console.log(historyPosition)} */}
 
             </div>
         </>
