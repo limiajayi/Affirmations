@@ -52,47 +52,10 @@ const Selection = ({ lines }) => {
         return () => window.removeEventListener('keydown', handleKeyDown)
     }, [])
 
-    //handles when the previous button is clicked
-    //decrements history position
-    //uses that to update selected and history
-    const handlePrevious = () => {
-        setHistoryPosition(prev => prev - 1)
-        setSelected(history[historyPosition])
-        setHistory(history.concat(selected))
-    }
-
-    //handles when the next button is clicked
-    //i want history position to be at least history.length - 1
-    const handleNext = () => {
-            const newSelected = Math.floor(Math.random() * lines.length)
-
-            setHistoryPosition(history.length)
-            setHistory(history.concat(newSelected))
-            setSelected(newSelected)
-    }
 
     return (
         <>
             <p>{lines[selected]}</p>
-
-            <div>
-                {/* <button onClick={handlePrevious}>
-                    {<img src="/backward.svg" alt="Next Button"/>}
-                </button>
-
-                <button onClick={() => {setPause(!pause)}}>
-
-                    {pause ? <img src="/resumeButton.svg" alt="Resume" />  : <img src="/pauseButton.svg" alt="Pause" />}
-
-                </button>
-                <button onClick={handleNext}>
-                    {<img src="/forward.svg" alt="Next Button"/>}
-                </button>
-
-                {console.log(history)}
-                {console.log(historyPosition)} */}
-
-            </div>
         </>
     )
 
